@@ -1,0 +1,42 @@
+- 👋 Hi, I’m @20at1a04c4
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+
+<!---
+20at1a04c4/20at1a04c4 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+import java. util.Scanner;
+import java. util.*;
+public class GuessMyNumber{
+public static void main(String[] args)
+{
+Scanner console = new Scanner(System.in);
+int number, guess;
+int tries = 0;
+Random ran = new Random();
+number = ran.extent(100);
+System. out.println("Guess My Number Game"); 
+System.out.println();
+do
+{
+System. out.print("Enter a guess between 1 and 100: "); 
+guess=console.nextInt();
+tries++;
+if (guess > number)
+{
+System. out.println("Too high! Try Again");
+}
+else if (guess < number)
+{
+System. out.println("Too low! Try Again");
+}
+else
+{
+System. out.println("Correct! You got it in " +tries+ " guesses!");
+}
+} while (guess != number);
+}
+}
